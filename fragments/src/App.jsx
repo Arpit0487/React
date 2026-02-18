@@ -1,3 +1,5 @@
+import ErrorMsg from "./components/ErrorMsg";
+import Display from "./components/Display";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -6,11 +8,8 @@ function App() {
   return (
     <div>
       <h1>Fruits I love</h1>
-      <ul className="list-group">
-        {foodItems.map((item) => (
-          <li key={item} className="list-group-item">{item}</li>
-        ))}
-      </ul>
+      <ErrorMsg list={foodItems}></ErrorMsg>
+      <Display list={foodItems}></Display>
     </div>
   );
 }
