@@ -1,9 +1,11 @@
+
 input {
   width: 100%;
 }
 
 .kg-button {
   min-width: 80px;
+  float: right;
 }
 
 .kg-row {
