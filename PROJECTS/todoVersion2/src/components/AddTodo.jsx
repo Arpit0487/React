@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdOutlineAdd } from "react-icons/md";
 
 function AddTodo({ addTask }) {
   const [todoText, setTodoText] = useState("");
@@ -36,7 +37,7 @@ function AddTodo({ addTask }) {
             className="btn btn-success kg-button"
             onClick={handleAdd}
           >
-            Add
+            <MdOutlineAdd />
           </button>
         </div>
       </div>
